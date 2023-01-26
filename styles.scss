@@ -1,13 +1,14 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  background-color: lightgray;
 }
 body {
   margin: 0;
 }
 main {
   display: block;
-// }
+}
 // h1 {
 //   font-size: 2em;
 //   margin: 0.67em 0;
@@ -147,4 +148,89 @@ main {
 //   display: none;
 // }
 
+@font-face {
+  font-family: Proxima_bold;
+  src: url(media/fonts/proximanova_bold.otf);
+}
+@font-face {
+  font-family: Proxima_regular;
+  src: url(media/fonts/proximanova_regular.ttf);
+}
+* {
+  font-family: Proxima_bold;
+}
 
+$base-orange: #bea67c;
+$base-grey: #a6a6a6;
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-color: lightblue;
+  &__menu {
+    background-color: unset;
+    border: none;
+
+    span {
+      position: absolute;
+      background-color: $base-orange;
+      width: 33px;
+      height: 2px;
+      left: 30px;
+      top: 35px;
+      &:nth-child(1) {
+        top: 25px;
+      }
+      &:nth-child(3) {
+        top: 45px;
+      }
+    }
+    p {
+      color: $base-grey;
+      margin-left: 70px;
+      margin-top: 23px;
+      font-size: 10px;
+    }
+  }
+  &__navigation {
+  }
+  &__list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+  }
+  &__button {
+    margin: 0px 30px;
+    a {
+      font-size: 12px;
+      text-decoration: none;
+      color: $base-grey;
+    }
+  }
+  &__logo {
+    position: relative;
+    margin: 0px 30px;
+    a {
+      letter-spacing: 15px;
+      font-size: 25px;
+      text-decoration: none;
+      color: white;
+    }
+    &__span {
+      position: absolute;
+      background-color: $base-orange;
+      width: 52px;
+      height: 4px;
+      top: 12px;
+      left: 38px;
+    }
+  }
+  &__switch-language {
+    margin-right: 30px;
+    font-size: 10px;
+    background-color: unset;
+    border: none;
+    color: $base-grey;
+  }
+}
