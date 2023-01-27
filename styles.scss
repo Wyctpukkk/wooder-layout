@@ -442,7 +442,6 @@ $base-grey: #a6a6a6;
     position: absolute;
     margin-top: -334px;
     margin-left: -226px;
-    letter-spacing: 3px;
     font-size: 400px;
     color: $base-orange;
     opacity: 10%;
@@ -479,6 +478,132 @@ $base-grey: #a6a6a6;
     &:nth-child(4) {
       left: -180px;
       top: 500px;
+    }
+  }
+}
+
+.decor {
+  position: relative;
+  margin-left: 570px;
+  margin-top: 280px;
+  display: flex;
+  margin-bottom: 100px;
+  &__right {
+    margin-left: 66px;
+    margin-top: 60px;
+    width: 600px;
+  }
+  &__title {
+    text-align: end;
+    width: 350px;
+    letter-spacing: 3px;
+    font-size: 48px;
+  }
+  &__desc {
+    text-align: end;
+    margin-top: -30px;
+    margin-left: 75px;
+    font-family: Proxima_regular;
+    width: 270px;
+    font-size: 15px;
+  }
+
+  button {
+    margin-left: 186px;
+    position: relative;
+    letter-spacing: 3px;
+    cursor: pointer;
+    background: unset;
+    border: none;
+    color: black;
+    font-size: 14px;
+    padding: 20px 100px 20px 0px;
+    span {
+      position: absolute;
+      background-color: $base-orange;
+      width: 33px;
+      height: 1px;
+      right: 60px;
+      top: 27px;
+      &:nth-child(1) {
+        width: 4px;
+        top: 25px;
+        transform: rotate(50deg);
+      }
+      &:nth-child(3) {
+        width: 4px;
+        top: 29px;
+        transform: rotate(-50deg);
+      }
+      &:nth-child(4) {
+        width: 43px;
+        height: 2px;
+        top: 43px;
+        left: 0px;
+      }
+    }
+  }
+  &__left {
+    z-index: 1;
+    margin-left: -210px;
+    width: 620px;
+    height: 400px;
+    overflow: hidden;
+    box-shadow: 1px 1px 20px #dadada, -1px -1px 10px #dadada,
+      -1px -0px 10px #dadada, -0px -1px 10px #dadada;
+    img {
+      display: block;
+      transform: scale(0.72) translate(-190px, -130px);
+      filter: grayscale(30%);
+    }
+  }
+  &__decor {
+    z-index: 2;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: -565px;
+    letter-spacing: 3px;
+    font-size: 170px;
+    color: #d0d0d0;
+    opacity: 25%;
+  }
+  &__D {
+    z-index: 2;
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 763px;
+    font-size: 400px;
+    color: $base-orange;
+    opacity: 10%;
+  }
+  &__02 {
+    z-index: 2;
+    position: absolute;
+    margin-top: 366px;
+    margin-left: 964px;
+    letter-spacing: 3px;
+    font-size: 36px;
+    color: black;
+  }
+  &__spans {
+    position: absolute;
+    background-color: $base-orange;
+    width: 4px;
+    height: 50px;
+    left: 985px;
+    top: 470px;
+    &:nth-child(2) {
+      top: 165px;
+      left: 879px;
+      transform: rotate(90deg);
+    }
+    &:nth-child(3) {
+      background-color: black;
+      top: 66px;
+      left: 923px;
+      width: 1px;
+      height: 133px;
+      transform: rotate(90deg);
     }
   }
 }
