@@ -1,12 +1,13 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
-  background-color: lightgray;
 }
 body {
   margin: 0;
+  width: 100%;
 }
 main {
+  position: relative;
   display: block;
 }
 // h1 {
@@ -164,14 +165,14 @@ $base-orange: #bea67c;
 $base-grey: #a6a6a6;
 
 .header {
-  position: relative;
+  z-index: 1;
+  width: 100%;
+  position: absolute;
   display: flex;
   justify-content: space-between;
-  background-color: lightblue;
   &__menu {
     background-color: unset;
     border: none;
-
     span {
       position: absolute;
       background-color: $base-orange;
@@ -189,21 +190,21 @@ $base-grey: #a6a6a6;
     p {
       color: $base-grey;
       margin-left: 70px;
-      margin-top: 23px;
-      font-size: 10px;
+      margin-top: 2px;
+      font-size: 15px;
     }
   }
-  &__navigation {
-  }
   &__list {
+    margin-left: -40px;
+    margin-top: 30px;
     list-style-type: none;
     display: flex;
     align-items: center;
   }
-  &__button {
+  &__nav-button {
     margin: 0px 30px;
     a {
-      font-size: 12px;
+      font-size: 15px;
       text-decoration: none;
       color: $base-grey;
     }
@@ -213,24 +214,146 @@ $base-grey: #a6a6a6;
     margin: 0px 30px;
     a {
       letter-spacing: 15px;
-      font-size: 25px;
+      font-size: 36px;
       text-decoration: none;
       color: white;
     }
     &__span {
       position: absolute;
       background-color: $base-orange;
-      width: 52px;
+      width: 67px;
       height: 4px;
-      top: 12px;
-      left: 38px;
+      top: 18px;
+      left: 49px;
     }
   }
   &__switch-language {
     margin-right: 30px;
-    font-size: 10px;
+    font-size: 15px;
     background-color: unset;
     border: none;
     color: $base-grey;
+  }
+}
+.background {
+  position: relative;
+  &__layout {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    .span {
+      position: absolute;
+      &__01 {
+        position: absolute;
+        top: 305px;
+        left: 348px;
+        color: $base-orange;
+        font-size: 52px;
+        transform: rotate(90deg);
+      }
+      &__desc {
+        position: absolute;
+        top: 500px;
+        left: 1411px;
+        color: $base-orange;
+        font-size: 14px;
+        transform: rotate(90deg);
+        width: 300px;
+        opacity: 0.5;
+      }
+      &__V {
+        position: absolute;
+        top: -110px;
+        left: 1730px;
+        color: $base-orange;
+        font-size: 395px;
+        width: 300px;
+        opacity: 0.08;
+      }
+      &__circles {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: $base-orange;
+        left: 370px;
+        top: 500px;
+        border-radius: 50%;
+        &:nth-child(3) {
+          background-color: #505050;
+          top: 540px;
+        }
+        &:nth-child(4) {
+          background-color: #505050;
+          top: 580px;
+        }
+        &:nth-child(5) {
+          background-color: #505050;
+          top: 620px;
+        }
+      }
+      &__line {
+        position: absolute;
+        width: 4px;
+        height: 50px;
+        background-color: $base-orange;
+        top: 290px;
+        left: 375px;
+        &:nth-child(7) {
+          top: 1010px;
+          left: 1560px;
+        }
+      }
+    }
+  }
+  &__first {
+    width: 1015px;
+    height: 1000px;
+    filter: brightness(10%);
+    background-image: url(/media/images/1.jpg);
+    background-size: cover;
+  }
+  &__second {
+    height: 1040px;
+    width: 900px;
+    background-size: cover;
+    background-image: url(/media/images/2.jpg);
+    filter: brightness(10%);
+  }
+  &__title {
+    letter-spacing: 20px;
+    position: absolute;
+    color: $base-orange;
+    font-size: 100px;
+    left: 35.5%;
+    top: 23%;
+    button {
+      cursor: pointer;
+      top: 125%;
+      left: 0%;
+      position: absolute;
+      background: unset;
+      border: 2px solid white;
+      color: white;
+      font-size: 14px;
+      padding: 20px 120px 20px 100px;
+      span {
+        position: absolute;
+        background-color: white;
+        width: 33px;
+        height: 1px;
+        right: 80px;
+        top: 28px;
+        &:nth-child(1) {
+          width: 7px;
+          top: 25px;
+          transform: rotate(50deg);
+        }
+        &:nth-child(3) {
+          width: 7px;
+          top: 31px;
+          transform: rotate(-50deg);
+        }
+      }
+    }
   }
 }
