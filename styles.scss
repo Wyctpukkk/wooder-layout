@@ -723,3 +723,54 @@ main {
     }
   }
 }
+.footer {
+  position: relative;
+  width: 100%;
+  height: 65px;
+  overflow: hidden;
+  img {
+    filter: brightness(20%);
+    transform: scale(1) translate(0%, -30%);
+  }
+  &__text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    .footer__copyright {
+      margin-left: 205px;
+      margin-top: 27px;
+      font-size: 15px;
+      color: #d0d0d0;
+      font-family: Proxima_regular;
+      opacity: 50%;
+    }
+    .footer__title {
+      margin-left: 104px;
+      margin-top: 18px;
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 4px;
+      font-size: 30px;
+    }
+    .footer__author {
+      margin-left: 10px;
+      margin-right: 91px;
+      margin-top: 25px;
+      font-size: 15px;
+      color: #d0d0d0;
+      opacity: 50%;
+      font-family: Proxima_regular;
+    }
+    span {
+      position: absolute;
+      background-color: $base-orange;
+      width: 48px;
+      height: 3px;
+      top: 33px;
+      left: 948px;
+    }
+  }
+}
