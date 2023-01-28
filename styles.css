@@ -36,6 +36,10 @@ main {
 .header__menu {
   background-color: unset;
   border: none;
+  color: #a6a6a6;
+  margin-left: 70px;
+  margin-top: -14px;
+  font-size: 15px;
 }
 .header__menu span {
   position: absolute;
@@ -50,12 +54,6 @@ main {
 }
 .header__menu span:nth-child(3) {
   top: 45px;
-}
-.header__menu p {
-  color: #a6a6a6;
-  margin-left: 70px;
-  margin-top: 2px;
-  font-size: 15px;
 }
 .header__list {
   margin-left: -40px;

@@ -33,6 +33,10 @@ main {
   &__menu {
     background-color: unset;
     border: none;
+    color: $base-grey;
+    margin-left: 70px;
+    margin-top: -14px;
+    font-size: 15px;
     span {
       position: absolute;
       background-color: $base-orange;
@@ -46,12 +50,6 @@ main {
       &:nth-child(3) {
         top: 45px;
       }
-    }
-    p {
-      color: $base-grey;
-      margin-left: 70px;
-      margin-top: 2px;
-      font-size: 15px;
     }
   }
   &__list {
