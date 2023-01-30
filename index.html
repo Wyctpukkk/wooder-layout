@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Wooder</title>
   </head>
@@ -51,7 +54,6 @@
             <span class="span__line"></span>
             <p class="span__desc">FURNITURE &nbsp; &amp; &nbsp; DECORE</p>
             <p class="span__V">W</p>
-            <p class="span__scroll">SCROLL</p>
             <span class="span__arrow"></span>
             <span class="span__arrow"></span>
             <span class="span__arrow"></span>
@@ -113,11 +115,13 @@
           <span class="decor__spans"></span>
           <span class="decor__spans"></span>
           <span class="decor__spans"></span>
-          <span class="decor__spans"></span>
         </div>
       </section>
       <section class="video">
-        <h2 class="video__title">wooder – is quality</h2>
+        <h2 class="video__title">
+          wooder – is quality<span class="video__title__span"></span>
+        </h2>
+
         <p class="video__title__desc">
           We create unique design objects made of rare wood, specially under the
           order.
@@ -198,16 +202,18 @@
     <footer>
       <div class="footer">
         <img src="/media/images/1.jpg" alt="img" />
-        <div class="footer__text">
-          <p class="footer__copyright">© 2016 WOODER</p>
-          <p class="footer__title">Wooder</p>
-          <a href="#"
-            ><p class="footer__author">
-              Designed by: <b>Viacheslav Olianishyn</b>
-            </p></a
-          >
-          <span></span>
-        </div>
+        <ul class="footer__text">
+          <li class="footer__copyright">© 2016 WOODER</li>
+          <li class="footer__title">
+            <p>Wooder</p>
+            <span></span>
+          </li>
+
+          <li class="footer__author">
+            Designed by:
+            <b><a href="#" class="footer__author">Viacheslav Olianishyn</a></b>
+          </li>
+        </ul>
       </div>
     </footer>
   </body>
