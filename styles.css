@@ -38,6 +38,8 @@ main {
   justify-content: space-between;
 }
 .header__menu {
+  cursor: pointer;
+  padding: 10px;
   background-color: unset;
   border: none;
   color: #a6a6a6;
@@ -166,7 +168,9 @@ main {
     font-size: 20px;
   }
   .header__menu {
-    margin-top: 24px;
+    margin-top: 15px;
+    padding: 21px;
+    margin-left: 25px;
   }
   .header__switch-language {
     margin-top: 24px;
