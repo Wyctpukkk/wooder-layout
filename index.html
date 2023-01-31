@@ -23,12 +23,23 @@
             <span class="header__logo__span"></span>
             <a href="#">WOODER</a>
           </li>
-          <li class="header__nav-button"><a href="#">HOME</a></li>
-          <li class="header__nav-button"><a href="#">PRODUCTS</a></li>
-          <li class="header__nav-button"><a href="#">ABOUT</a></li>
+          <li class="header__nav-button">
+            <a href="#" data-lang="nav_home">HOME</a>
+          </li>
+          <li class="header__nav-button">
+            <a href="#" data-lang="nav_products">PRODUCTS</a>
+          </li>
+          <li class="header__nav-button">
+            <a href="#" data-lang="nav_about">ABOUT</a>
+          </li>
         </ul>
       </nav>
-      <button class="header__switch-language">EN</button>
+      <div>
+        <button class="header__switch-language choosed" data-btn="ru">
+          EN
+        </button>
+        <button class="header__switch-language" data-btn="en">RU</button>
+      </div>
     </header>
     <main>
       <section class="background">
@@ -37,7 +48,7 @@
           <div class="background__second"></div>
           <h2 class="background__title">
             WOODER
-            <button>
+            <button data-lang="btn_more">
               LEARN MORE
               <span></span>
               <span></span>
@@ -216,5 +227,6 @@
       </div>
     </footer>
     <script src="/script.js"></script>
+    <script src="/script2.js"></script>
   </body>
 </html>

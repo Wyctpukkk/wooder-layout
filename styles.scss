@@ -108,6 +108,7 @@ main {
   &__nav-button {
     margin: 0px 30px;
     a {
+      text-transform: uppercase;
       font-size: 15px;
       text-decoration: none;
       color: $base-grey;
@@ -132,7 +133,13 @@ main {
     }
   }
   &__switch-language {
-    margin-right: 30px;
+    background-color: unset;
+    border: none;
+  }
+  &__switch-language.choosed {
+    position: absolute;
+    top: 40px;
+    right: 30px;
     font-size: 15px;
     background-color: unset;
     border: none;
@@ -169,6 +176,7 @@ main {
       margin-left: 25px;
     }
     &__switch-language {
+      top: 0px;
       margin-top: 24px;
     }
   }
