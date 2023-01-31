@@ -293,6 +293,7 @@ main {
   top: 23%;
 }
 .background__title button {
+  text-transform: uppercase;
   letter-spacing: 4px;
   cursor: pointer;
   top: 125%;
@@ -396,6 +397,7 @@ main {
   font-size: 15px;
 }
 .furniture button {
+  text-transform: uppercase;
   position: relative;
   letter-spacing: 3px;
   cursor: pointer;
@@ -595,6 +597,7 @@ main {
   font-size: 15px;
 }
 .decor button {
+  text-transform: uppercase;
   margin-left: 186px;
   position: relative;
   letter-spacing: 3px;
@@ -1073,6 +1076,7 @@ main {
   font-size: 15px;
 }
 .about button {
+  text-transform: uppercase;
   position: relative;
   letter-spacing: 3px;
   cursor: pointer;

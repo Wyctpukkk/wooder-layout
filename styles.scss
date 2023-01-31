@@ -283,6 +283,7 @@ main {
     left: 23.5%; // изменил
     top: 23%;
     button {
+      text-transform: uppercase;
       letter-spacing: 4px;
       cursor: pointer;
       top: 125%;
@@ -387,6 +388,7 @@ main {
   }
 
   button {
+    text-transform: uppercase;
     position: relative;
     letter-spacing: 3px;
     cursor: pointer;
@@ -581,6 +583,7 @@ main {
   }
 
   button {
+    text-transform: uppercase;
     margin-left: 186px;
     position: relative;
     letter-spacing: 3px;
@@ -1058,6 +1061,7 @@ main {
   }
 
   button {
+    text-transform: uppercase;
     position: relative;
     letter-spacing: 3px;
     cursor: pointer;
